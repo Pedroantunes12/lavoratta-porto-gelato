@@ -1,10 +1,10 @@
 import { Instagram } from "lucide-react";
-import gelados from "@/assets/gelados.jpg";
-import boloLava from "@/assets/bolo-lava.jpg";
-import pastelNata from "@/assets/pastel-nata.jpg";
-import redVelvet from "@/assets/red-velvet.jpg";
+import pastelNataReal from "@/assets/pastel-nata-real.png";
+import burgerTop from "@/assets/burger-top.png";
+import coneTap from "@/assets/cone-tap.png";
+import brigadeiros from "@/assets/brigadeiros.png";
 
-const images = [gelados, boloLava, pastelNata, redVelvet];
+const images = [pastelNataReal, burgerTop, coneTap, brigadeiros];
 
 const InstagramSection = () => {
   return (

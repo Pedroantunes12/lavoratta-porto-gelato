@@ -1,11 +1,11 @@
 import PageHero from "@/components/PageHero";
 import Footer from "@/components/Footer";
 import InstagramSection from "@/components/InstagramSection";
-import aboutShop from "@/assets/about-shop.jpg";
-import aboutInterior from "@/assets/about-interior.jpg";
+import shopDisplay from "@/assets/shop-display.png";
+import gelatoCupFire from "@/assets/gelato-cup-fire.png";
 import garden from "@/assets/garden.jpg";
 import logo from "@/assets/logo.png";
-import heroGelato from "@/assets/hero-gelato.jpg";
+import aboutInterior from "@/assets/about-interior.jpg";
 
 const About = () => {
   return (
@@ -32,10 +32,9 @@ const About = () => {
               </p>
             </div>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
             <img src={aboutInterior} alt="Interior" className="rounded-lg shadow-lg w-full h-72 object-cover" />
-            <img src={aboutShop} alt="Gelato display" className="rounded-lg shadow-lg w-full h-72 object-cover" />
+            <img src={shopDisplay} alt="Gelato display" className="rounded-lg shadow-lg w-full h-72 object-cover" />
           </div>
         </div>
       </section>
@@ -43,10 +42,7 @@ const About = () => {
       {/* Inspire-se */}
       <section className="bg-primary py-20">
         <div className="container mx-auto px-4">
-          <h2 className="font-display text-5xl md:text-6xl italic font-bold text-primary-foreground mb-12">
-            Inspire-se
-          </h2>
-
+          <h2 className="font-display text-5xl md:text-6xl italic font-bold text-primary-foreground mb-12">Inspire-se</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h3 className="font-display text-2xl font-bold text-primary-foreground mb-2">O Nosso</h3>
@@ -54,8 +50,7 @@ const About = () => {
             </div>
             <div>
               <p className="font-display italic text-primary-foreground/90 text-xl leading-relaxed mb-6">
-                Sabemos que o amor é a linguagem universal, mas nada diz amor como Gelado Artesanal. 
-                Gelado é alegria, gelado é união de sabores e pessoas, gelado é vida!
+                Sabemos que o amor é a linguagem universal, mas nada diz amor como Gelado Artesanal. Gelado é alegria, gelado é união de sabores e pessoas, gelado é vida!
               </p>
               <p className="text-primary-foreground/70 text-sm leading-relaxed mb-4">
                 Inspirada na palavra de origem italiana Lavorare que significa trabalhar, a Gelataria Lavoratta pretende remeter à arte no fabrico artesanal do gelado.
@@ -84,7 +79,7 @@ const About = () => {
             <img src={garden} alt="Gallery" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="aspect-square overflow-hidden">
-            <img src={heroGelato} alt="Gallery" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            <img src={gelatoCupFire} alt="Gallery" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
       </section>
