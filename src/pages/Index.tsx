@@ -119,7 +119,7 @@ const Index = () => {
       <section className="relative overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
           <div className="relative overflow-hidden">
-            <img src={cakeBerries} alt="Cake" className="w-full h-full object-cover" />
+            <img src={cakeTopView} alt="Cake" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-primary/40" />
           </div>
           <div className="bg-primary p-10 md:p-16 flex flex-col justify-center relative">
