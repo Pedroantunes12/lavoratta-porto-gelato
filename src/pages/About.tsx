@@ -1,16 +1,21 @@
 import PageHero from "@/components/PageHero";
 import Footer from "@/components/Footer";
-import InstagramSection from "@/components/InstagramSection";
+import aboutCorridor from "@/assets/about-corridor.png";
+import aboutGardenWall from "@/assets/about-garden-wall.png";
+import aboutConeGreen from "@/assets/about-cone-green.png";
+import aboutGelatoDisplay from "@/assets/about-gelato-display.png";
+import aboutFirepit from "@/assets/about-firepit.png";
+import aboutFirepitTop from "@/assets/about-firepit-top.png";
+import aboutLogoBg from "@/assets/about-logo-bg.png";
+import aboutChocoTap from "@/assets/about-choco-tap.png";
 import shopDisplay from "@/assets/shop-display.png";
 import gelatoCupFire from "@/assets/gelato-cup-fire.png";
-import garden from "@/assets/garden.jpg";
 import logo from "@/assets/logo.png";
-import aboutInterior from "@/assets/about-interior.jpg";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
-      <PageHero image={garden} title="Sobre" />
+      <PageHero image={aboutGardenWall} title="Sobre" />
 
       {/* O Nosso Local */}
       <section className="py-20">
@@ -32,9 +37,10 @@ const About = () => {
               </p>
             </div>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-            <img src={aboutInterior} alt="Interior" className="rounded-lg shadow-lg w-full h-72 object-cover" />
-            <img src={shopDisplay} alt="Gelato display" className="rounded-lg shadow-lg w-full h-72 object-cover" />
+            <img src={aboutCorridor} alt="Interior Lavoratta" className="rounded-lg shadow-lg w-full h-72 object-cover" />
+            <img src={shopDisplay} alt="Montra de gelados" className="rounded-lg shadow-lg w-full h-72 object-cover" />
           </div>
         </div>
       </section>
@@ -63,24 +69,38 @@ const About = () => {
         </div>
       </section>
 
-      {/* Gallery */}
-      <section className="py-0">
+      {/* Gallery Grid - matching original layout */}
+      <section>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-0">
+          {/* Row 1 */}
           <div className="aspect-square overflow-hidden">
-            <img src={aboutInterior} alt="Gallery" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            <img src={gelatoCupFire} alt="Gelato" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
-          <div className="aspect-square overflow-hidden bg-primary flex items-center justify-center p-8">
-            <div className="text-center">
-              <img src={logo} alt="Lavoratta" className="w-32 mx-auto mb-3" />
-              <p className="text-primary-foreground text-xs tracking-[0.2em] uppercase">A Arte de Combinar Sabores</p>
-            </div>
+          <div className="aspect-square overflow-hidden flex items-center justify-center">
+            <img src={aboutLogoBg} alt="Lavoratta" className="w-full h-full object-cover" />
           </div>
           <div className="aspect-square overflow-hidden">
-            <img src={garden} alt="Gallery" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            <img src={aboutCorridor} alt="Corredor" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="aspect-square overflow-hidden">
-            <img src={gelatoCupFire} alt="Gallery" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            <img src={aboutConeGreen} alt="Cone gelado" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
+
+          {/* Row 2 */}
+          <div className="aspect-square overflow-hidden">
+            <img src={aboutChocoTap} alt="Chocolate tap" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="aspect-square overflow-hidden col-span-2">
+            <img src={aboutFirepitTop} alt="Fire pit" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="aspect-square overflow-hidden">
+            <img src={aboutFirepit} alt="Lareira" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+        </div>
+
+        {/* Full width gelato display */}
+        <div className="w-full h-[40vh] overflow-hidden">
+          <img src={aboutGelatoDisplay} alt="Gelato display" className="w-full h-full object-cover" />
         </div>
       </section>
 
