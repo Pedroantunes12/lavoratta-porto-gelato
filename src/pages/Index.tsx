@@ -41,22 +41,8 @@ const Index = () => {
         <img src={heroGarden} alt="Lavoratta" className="absolute inset-0 w-full h-full object-cover" />
         <div className="hero-overlay" />
         <Navbar />
-        <p className="absolute top-6 left-1/2 -translate-x-1/2 z-10 font-display italic text-primary-foreground/60 text-sm tracking-wide text-center">
-          Life is like an ice cream, enjoy it before it melts.
-        </p>
-        <div className="relative z-10 text-center">
-          <p className="text-primary-foreground/80 text-xs tracking-[0.35em] uppercase mb-2">
-            A <span className="font-bold">Fábrica</span> de
-          </p>
-          <p className="text-primary-foreground/80 text-xs tracking-[0.35em] uppercase mb-8">
-            Gelados Artesanais
-          </p>
-          <h1 className="font-display text-7xl md:text-9xl text-primary-foreground font-light tracking-wide mb-6">
-            Lavoratta
-          </h1>
-          <p className="text-primary-foreground/70 text-xs tracking-[0.3em] uppercase">
-            A Arte de Combinar Sabores
-          </p>
+        <div className="relative z-10 flex items-center justify-center">
+          <img src={logoWhite} alt="Lavoratta" className="w-72 md:w-96" />
         </div>
       </section>
 
