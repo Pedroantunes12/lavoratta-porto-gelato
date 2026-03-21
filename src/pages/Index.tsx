@@ -37,7 +37,7 @@ const Index = () => {
     <div className="min-h-screen bg-background overflow-hidden">
       {/* Hero - Garden background */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <img src={garden} alt="Lavoratta" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroGarden} alt="Lavoratta" className="absolute inset-0 w-full h-full object-cover" />
         <div className="hero-overlay" />
         <Navbar />
         <p className="absolute top-6 left-1/2 -translate-x-1/2 z-10 font-display italic text-primary-foreground/60 text-sm tracking-wide text-center">
