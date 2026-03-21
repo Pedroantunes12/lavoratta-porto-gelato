@@ -85,4 +85,32 @@
   .menu-item-image {
     @apply w-16 h-16 rounded-full object-cover border-2 border-primary/20;
   }
+
+  .sphere {
+    @apply absolute rounded-full pointer-events-none;
+  }
+
+  .sphere-yellow {
+    @apply sphere;
+    background: radial-gradient(circle at 30% 30%, hsl(50, 80%, 70%), hsl(45, 90%, 50%));
+    box-shadow: 0 4px 15px hsl(45 90% 50% / 0.3);
+  }
+
+  .sphere-white {
+    @apply sphere;
+    background: radial-gradient(circle at 30% 30%, hsl(0, 0%, 100%), hsl(0, 0%, 85%));
+    box-shadow: 0 4px 15px hsl(0 0% 0% / 0.1);
+  }
+
+  .sphere-burgundy {
+    @apply sphere;
+    background: radial-gradient(circle at 30% 30%, hsl(350, 40%, 55%), hsl(350, 55%, 33%));
+    box-shadow: 0 4px 15px hsl(350 55% 33% / 0.3);
+  }
+
+  .watermark-text {
+    @apply absolute right-0 top-1/2 -translate-y-1/2 font-display text-8xl italic font-bold text-primary/5 tracking-widest whitespace-nowrap;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
 }
