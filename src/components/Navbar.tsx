@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo.png";
+import logoWhite from "@/assets/logo-white.png";
 
 const navItems = [
   { label: "Início", path: "/" },
