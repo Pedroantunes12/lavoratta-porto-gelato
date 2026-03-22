@@ -11,6 +11,12 @@ import gelados from "@/assets/gelados.jpg";
 import pastelNata from "@/assets/pastel-nata.jpg";
 import saboresHero from "@/assets/sabores-hero.jpg";
 import garden from "@/assets/garden.jpg";
+import menuCrepeFroyo from "@/assets/menu-crepe-froyo.jpg";
+import menuCrepePresunto from "@/assets/menu-crepe-presunto.jpg";
+import menuWaffles from "@/assets/menu-waffles.jpg";
+import menuWaffleChoc from "@/assets/menu-waffle-choc.jpg";
+import menuPanquecaBambini from "@/assets/menu-panqueca-bambini.jpg";
+import menuPanquecaEgg from "@/assets/menu-panqueca-egg.jpg";
 
 type MenuItem = { name: string; desc: string; price: string; img: string };
 
