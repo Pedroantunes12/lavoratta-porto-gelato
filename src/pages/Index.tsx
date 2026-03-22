@@ -10,7 +10,7 @@ import pastelNataReal from "@/assets/pastel-nata-real.png";
 import boloLavaReal from "@/assets/bolo-lava-real.png";
 import ribsBurgerReal from "@/assets/ribs-burger-real.png";
 import geladosReal from "@/assets/gelados-real.png";
-import handConePink from "@/assets/hand-cone-pink.png";
+import saboresCone from "@/assets/sabores-cone.jpg";
 import redvelvetCake from "@/assets/redvelvet-cake.jpg";
 
 const creations = [
@@ -156,8 +156,8 @@ const Index = () => {
         <div className="watermark-text">Lavoratta</div>
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <img src={handConePink} alt="Os Nossos Sabores" className="w-full max-w-sm mx-auto" />
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img src={saboresCone} alt="Os Nossos Sabores" className="w-full max-w-md mx-auto" />
             </div>
             <div>
               <h2 className="section-heading mb-8">Os Nossos<br />Sabores</h2>
