@@ -42,7 +42,7 @@ const Index = () => {
         <div className="hero-overlay" />
         <Navbar />
         <div className="relative z-10 flex items-center justify-center">
-          <img src={logoWhite} alt="Lavoratta" className="w-72 md:w-96" />
+          <img src={logoWhite} alt="Lavoratta" className="w-96 md:w-[500px] lg:w-[600px]" />
         </div>
       </section>
 
