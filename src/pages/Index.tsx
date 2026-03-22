@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InstagramSection from "@/components/InstagramSection";
 import heroGarden from "@/assets/hero-garden.jpg";
-import logoWhite from "@/assets/logo-white.png";
+import logoWhite from "@/assets/logo-hero.png";
 import gelatoCupFire from "@/assets/gelato-cup-fire.png";
 import pastelNataReal from "@/assets/pastel-nata-real.png";
 import boloLavaReal from "@/assets/bolo-lava-real.png";
