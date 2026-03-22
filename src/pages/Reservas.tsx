@@ -28,7 +28,10 @@ const Reservas = () => {
       <PageHero image={reservasExterior} title="Reservas" />
 
       {/* Intro */}
-      <section className="py-20">
+      <section className="relative py-20">
+        <div className="sphere-yellow w-12 h-12 top-4 left-[8%]" />
+        <div className="sphere-white w-8 h-8 top-20 right-[12%]" />
+        <div className="sphere-burgundy w-10 h-10 bottom-16 left-[25%]" />
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
             <AnimatedSection animation="fade-right">
