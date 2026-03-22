@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InstagramSection from "@/components/InstagramSection";
 import heroGarden from "@/assets/hero-garden.jpg";
-import logoWhite from "@/assets/logo-white.png";
+import logoWhite from "@/assets/logo-hero.png";
 import gelatoCupFire from "@/assets/gelato-cup-fire.png";
 import pastelNataReal from "@/assets/pastel-nata-real.png";
 import boloLavaReal from "@/assets/bolo-lava-real.png";
@@ -42,7 +42,7 @@ const Index = () => {
         <div className="hero-overlay" />
         <Navbar />
         <div className="relative z-10 flex items-center justify-center">
-          <img src={logoWhite} alt="Lavoratta" className="w-72 md:w-96" />
+          <img src={logoWhite} alt="Lavoratta" className="w-96 md:w-[500px] lg:w-[600px]" />
         </div>
       </section>
 
