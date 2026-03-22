@@ -71,10 +71,10 @@ const menuData: Record<string, MenuItem[]> = {
     { name: "Cheesecake de Morango", desc: "A versão da cheesecake com morango.", price: "3.30€", img: menuStrawberryPastry },
   ],
   "Saladas e Bowls": [
-    { name: "Presunto", desc: "Fresco, natural, com salsa e molho.", price: "8.25€", img: ribsBurger },
-    { name: "Mozzarella Fresca", desc: "Mozzarella, tomate, abóbora, tomate seco.", price: "7.90€", img: gelados },
-    { name: "Bowl Açaí", desc: "Bowl com açaí e fruta.", price: "9.90€", img: saboresHero },
-    { name: "Bowl Pitaya", desc: "Bowl de Pitaya e fruta e granola.", price: "9.90€", img: saboresHero },
+    { name: "Presunto", desc: "Fresco, natural, com salsa e molho.", price: "8.25€", img: menuSaladaPresunto },
+    { name: "Mozzarella Fresca", desc: "Mozzarella, tomate, abóbora, tomate seco.", price: "7.90€", img: menuSaladaMozzarella },
+    { name: "Bowl Açaí", desc: "Bowl com açaí e fruta.", price: "9.90€", img: menuBowls },
+    { name: "Bowl Pitaya", desc: "Bowl de Pitaya e fruta e granola.", price: "9.90€", img: menuSaladaTop },
   ],
   "Pastelaria e Sobremesas": [
     { name: "Brigadeiros", desc: "Vários sabores e combinações.", price: "1.30€", img: menuBrigadeiros },
