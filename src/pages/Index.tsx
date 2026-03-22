@@ -152,14 +152,30 @@ const Index = () => {
       </section>
 
       {/* Os Nossos Sabores */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative overflow-hidden">
+        {/* Burgundy top band */}
+        <div className="absolute top-0 left-0 right-0 h-1/3 bg-primary" />
+        
+        {/* Watermark */}
         <div className="watermark-text">Lavoratta</div>
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img src={saboresCone} alt="Os Nossos Sabores" className="w-full max-w-md mx-auto" />
+
+        {/* Decorative spheres */}
+        <div className="sphere-white w-10 h-10 top-8 left-[45%] z-10" />
+        <div className="sphere-burgundy w-6 h-6 top-4 left-[10%] z-10" />
+
+        <div className="container mx-auto px-4 relative z-10 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
+            {/* Left - Image overlapping burgundy band */}
+            <div className="relative -mt-4">
+              <img
+                src={conePinkGarden}
+                alt="Os Nossos Sabores"
+                className="w-full max-w-md mx-auto rounded-lg shadow-2xl"
+              />
             </div>
-            <div>
+
+            {/* Right - Text */}
+            <div className="pb-8">
               <h2 className="section-heading mb-8">Os Nossos<br />Sabores</h2>
               <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
                 Feitos de forma artesanal e com matéria-prima de excelência.
