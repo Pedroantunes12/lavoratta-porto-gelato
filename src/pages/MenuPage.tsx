@@ -88,11 +88,11 @@ const menuData: Record<string, MenuItem[]> = {
   ],
   "Pastelaria e Sobremesas": [
     { name: "Brigadeiros", desc: "Vários sabores e combinações.", price: "1.30€", img: menuBrigadeiros },
-    { name: "Cookies Caseiras", desc: "Cookies, para quem ama cookies com mega sabores.", price: "1.60€", img: menuBrownie },
-    { name: "Croissants", desc: "Recheios de queijo, fiambre, compota, geleia e morangos.", price: "2.00€", img: pastelNata },
+    { name: "Cookies Caseiras", desc: "Cookies, para quem ama cookies com mega sabores.", price: "1.60€", img: menuCookiesCups },
+    { name: "Croissants", desc: "Recheios de queijo, fiambre, compota, geleia e morangos.", price: "2.00€", img: menuCroissant },
     { name: "Éclair", desc: "Vários sabores e recheios.", price: "1.80€", img: menuEclairs },
-    { name: "Pastel Nata", desc: "Para acompanhar o café delicioso.", price: "1.20€", img: pastelNata },
-    { name: "Verrines", desc: "Parfait de Iogurte grego, granola e frutos.", price: "3.90€", img: saboresHero },
+    { name: "Pastel Nata", desc: "Para acompanhar o café delicioso.", price: "1.20€", img: menuPastelNata },
+    { name: "Verrines", desc: "Parfait de Iogurte grego, granola e frutos.", price: "3.90€", img: menuVerrine },
   ],
 };
 
