@@ -1,16 +1,15 @@
 import PageHero from "@/components/PageHero";
 import Footer from "@/components/Footer";
-import aboutCorridor from "@/assets/about-corridor.png";
 import aboutGardenWall from "@/assets/about-garden-wall.png";
-import aboutConeGreen from "@/assets/about-cone-green.png";
-import aboutGelatoDisplay from "@/assets/about-gelato-display.png";
-import aboutFirepit from "@/assets/about-firepit.png";
-import aboutFirepitTop from "@/assets/about-firepit-top.png";
-import aboutLogoBg from "@/assets/about-logo-bg.png";
-import aboutChocoTap from "@/assets/about-choco-tap.png";
-import shopDisplay from "@/assets/shop-display.png";
-import gelatoCupFire from "@/assets/gelato-cup-fire.png";
 import logo from "@/assets/logo.png";
+import logoFooter from "@/assets/logo-footer.jpg";
+import galleryCorridor from "@/assets/gallery-corridor.jpg";
+import galleryGarden from "@/assets/gallery-garden.webp";
+import galleryConeGreen from "@/assets/gallery-cone-green.webp";
+import galleryGelatoDisplay from "@/assets/gallery-gelato-display.png";
+import galleryFirepitClose from "@/assets/gallery-firepit-close.jpg";
+import galleryChocoCone from "@/assets/gallery-choco-cone.jpg";
+import galleryFirepitPeople from "@/assets/gallery-firepit-people.jpg";
 
 const About = () => {
   return (
@@ -39,8 +38,8 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-            <img src={aboutCorridor} alt="Interior Lavoratta" className="rounded-lg shadow-lg w-full h-72 object-cover" />
-            <img src={shopDisplay} alt="Montra de gelados" className="rounded-lg shadow-lg w-full h-72 object-cover" />
+            <img src={galleryCorridor} alt="Interior Lavoratta" className="rounded-lg shadow-lg w-full h-72 object-cover" />
+            <img src={galleryGarden} alt="Jardim Lavoratta" className="rounded-lg shadow-lg w-full h-72 object-cover" />
           </div>
         </div>
       </section>
@@ -69,33 +68,42 @@ const About = () => {
         </div>
       </section>
 
-      {/* Gallery Grid */}
+      {/* Gallery Mosaic */}
       <section>
-        <div className="grid grid-cols-3 gap-1">
-          {/* Row 1 - 3 equal columns */}
-          <div className="aspect-[4/3] overflow-hidden">
-            <img src={aboutChocoTap} alt="Chocolate tap" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+        {/* Row 1: corridor (25%) | garden firepit (50%) | logo block (25%) */}
+        <div className="grid grid-cols-4 gap-0">
+          <div className="aspect-square overflow-hidden">
+            <img src={galleryCorridor} alt="Interior" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
-          <div className="aspect-[4/3] overflow-hidden">
-            <img src={aboutFirepitTop} alt="Fire pit" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          <div className="col-span-2 aspect-[2/1] overflow-hidden">
+            <img src={galleryGarden} alt="Jardim" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
-          <div className="aspect-[4/3] overflow-hidden">
-            <img src={aboutFirepit} alt="Lareira" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-          </div>
-
-          {/* Row 2 - center large, sides blank with logo */}
-          <div className="aspect-[4/3] overflow-hidden flex items-center justify-center bg-background">
-          </div>
-          <div className="aspect-[4/3] overflow-hidden row-span-1">
-            <img src={aboutGardenWall} alt="Jardim" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="aspect-[4/3] overflow-hidden flex items-center justify-center bg-background">
+          <div className="aspect-square overflow-hidden flex items-center justify-center" style={{ backgroundColor: '#822635' }}>
+            <img src={logoFooter} alt="Lavoratta" className="w-3/4 object-contain" />
           </div>
         </div>
 
-        {/* Full width gelato display */}
-        <div className="w-full h-[40vh] overflow-hidden">
-          <img src={aboutGelatoDisplay} alt="Gelato display" className="w-full h-full object-cover" />
+        {/* Row 2: cone green wall (50%) | gelato display (50%) */}
+        <div className="grid grid-cols-2 gap-0">
+          <div className="aspect-[16/9] overflow-hidden">
+            <img src={galleryConeGreen} alt="Life is like an ice cream" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="aspect-[16/9] overflow-hidden">
+            <img src={galleryGelatoDisplay} alt="Gelados artesanais" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+        </div>
+
+        {/* Row 3: firepit close (25%) | firepit people (50%) | choco cone (25%) */}
+        <div className="grid grid-cols-4 gap-0">
+          <div className="aspect-square overflow-hidden">
+            <img src={galleryFirepitClose} alt="Lareira" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="col-span-2 aspect-[2/1] overflow-hidden">
+            <img src={galleryFirepitPeople} alt="Terraço" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="aspect-square overflow-hidden">
+            <img src={galleryChocoCone} alt="Cone chocolate" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
         </div>
       </section>
 
