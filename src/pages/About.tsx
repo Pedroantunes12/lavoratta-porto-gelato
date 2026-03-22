@@ -86,7 +86,7 @@ const About = () => {
         {/* Row 2: cone green wall (50%) | gelato display (50%) */}
         <div className="grid grid-cols-2 gap-0">
           <div className="aspect-[16/9] overflow-hidden">
-            <img src={galleryConeGreen} alt="Life is like an ice cream" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            <img src={galleryConeGreen} alt="Life is like an ice cream" className="w-full h-full object-cover object-right hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="aspect-[16/9] overflow-hidden">
             <img src={galleryGelatoDisplay} alt="Gelados artesanais" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
