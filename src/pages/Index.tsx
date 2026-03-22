@@ -10,7 +10,7 @@ import pastelNataReal from "@/assets/pastel-nata-real.png";
 import boloLavaReal from "@/assets/bolo-lava-real.png";
 import ribsBurgerReal from "@/assets/ribs-burger-real.png";
 import geladosReal from "@/assets/gelados-real.png";
-import saboresCone from "@/assets/sabores-cone.jpg";
+import conePinkGarden from "@/assets/cone-pink-garden.jpg";
 import redvelvetCake from "@/assets/redvelvet-cake.jpg";
 
 const creations = [
