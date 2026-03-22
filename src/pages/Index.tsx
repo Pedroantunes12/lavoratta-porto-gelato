@@ -3,6 +3,8 @@ import { ArrowRight, Star } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InstagramSection from "@/components/InstagramSection";
+import AnimatedSection from "@/components/AnimatedSection";
+import { useParallax } from "@/hooks/useScrollAnimation";
 import heroGarden from "@/assets/hero-garden.jpg";
 import logoWhite from "@/assets/logo-hero.png";
 import gelatoCupFire from "@/assets/gelato-cup-fire.png";
