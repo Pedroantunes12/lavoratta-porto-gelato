@@ -73,10 +73,10 @@ const menuData: Record<string, MenuItem[]> = {
     { name: "Bowl Pitaya", desc: "Bowl de Pitaya e fruta e granola.", price: "9.90€", img: saboresHero },
   ],
   "Pastelaria e Sobremesas": [
-    { name: "Brigadeiros", desc: "Vários sabores e combinações.", price: "1.30€", img: boloLava },
-    { name: "Cookies Caseiras", desc: "Cookies, para quem ama cookies com mega sabores.", price: "1.60€", img: redVelvet },
+    { name: "Brigadeiros", desc: "Vários sabores e combinações.", price: "1.30€", img: menuBrigadeiros },
+    { name: "Cookies Caseiras", desc: "Cookies, para quem ama cookies com mega sabores.", price: "1.60€", img: menuBrownie },
     { name: "Croissants", desc: "Recheios de queijo, fiambre, compota, geleia e morangos.", price: "2.00€", img: pastelNata },
-    { name: "Éclair", desc: "Vários sabores e recheios.", price: "1.80€", img: boloLava },
+    { name: "Éclair", desc: "Vários sabores e recheios.", price: "1.80€", img: menuEclairs },
     { name: "Pastel Nata", desc: "Para acompanhar o café delicioso.", price: "1.20€", img: pastelNata },
     { name: "Verrines", desc: "Parfait de Iogurte grego, granola e frutos.", price: "3.90€", img: saboresHero },
   ],
