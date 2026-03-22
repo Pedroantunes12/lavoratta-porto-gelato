@@ -1,16 +1,15 @@
 import PageHero from "@/components/PageHero";
 import Footer from "@/components/Footer";
-import aboutCorridor from "@/assets/about-corridor.png";
 import aboutGardenWall from "@/assets/about-garden-wall.png";
-import aboutConeGreen from "@/assets/about-cone-green.png";
-import aboutGelatoDisplay from "@/assets/about-gelato-display.png";
-import aboutFirepit from "@/assets/about-firepit.png";
-import aboutFirepitTop from "@/assets/about-firepit-top.png";
-import aboutLogoBg from "@/assets/about-logo-bg.png";
-import aboutChocoTap from "@/assets/about-choco-tap.png";
-import shopDisplay from "@/assets/shop-display.png";
-import gelatoCupFire from "@/assets/gelato-cup-fire.png";
 import logo from "@/assets/logo.png";
+import logoFooter from "@/assets/logo-footer.jpg";
+import galleryCorridor from "@/assets/gallery-corridor.jpg";
+import galleryGarden from "@/assets/gallery-garden.webp";
+import galleryConeGreen from "@/assets/gallery-cone-green.webp";
+import galleryGelatoDisplay from "@/assets/gallery-gelato-display.png";
+import galleryFirepitClose from "@/assets/gallery-firepit-close.jpg";
+import galleryChocoCone from "@/assets/gallery-choco-cone.jpg";
+import galleryFirepitPeople from "@/assets/gallery-firepit-people.jpg";
 
 const About = () => {
   return (
