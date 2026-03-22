@@ -38,9 +38,14 @@ const reviews = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-hidden">
-      {/* Hero - Garden background */}
+      {/* Hero - Garden background with parallax */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <img src={heroGarden} alt="Lavoratta" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0" ref={(() => {
+          const ref = useParallax();
+          return ref;
+        })()}>
+          <img src={heroGarden} alt="Lavoratta" className="w-full h-full object-cover" />
+        </div>
         <div className="hero-overlay" />
         <Navbar />
         <div className="relative z-10 flex items-center justify-center">
