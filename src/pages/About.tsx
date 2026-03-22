@@ -69,32 +69,27 @@ const About = () => {
         </div>
       </section>
 
-      {/* Gallery Grid - matching original layout */}
+      {/* Gallery Grid */}
       <section>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-0">
-          {/* Row 1 */}
-          <div className="aspect-square overflow-hidden">
-            <img src={gelatoCupFire} alt="Gelato" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="aspect-square overflow-hidden flex items-center justify-center">
-            <img src={aboutLogoBg} alt="Lavoratta" className="w-full h-full object-cover" />
-          </div>
-          <div className="aspect-square overflow-hidden">
-            <img src={aboutCorridor} alt="Corredor" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="aspect-square overflow-hidden">
-            <img src={aboutConeGreen} alt="Cone gelado" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-          </div>
-
-          {/* Row 2 */}
-          <div className="aspect-square overflow-hidden">
+        <div className="grid grid-cols-3 gap-1">
+          {/* Row 1 - 3 equal columns */}
+          <div className="aspect-[4/3] overflow-hidden">
             <img src={aboutChocoTap} alt="Chocolate tap" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
-          <div className="aspect-square overflow-hidden col-span-2">
+          <div className="aspect-[4/3] overflow-hidden">
             <img src={aboutFirepitTop} alt="Fire pit" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
-          <div className="aspect-square overflow-hidden">
+          <div className="aspect-[4/3] overflow-hidden">
             <img src={aboutFirepit} alt="Lareira" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+
+          {/* Row 2 - center large, sides blank with logo */}
+          <div className="aspect-[4/3] overflow-hidden flex items-center justify-center bg-background">
+          </div>
+          <div className="aspect-[4/3] overflow-hidden row-span-1">
+            <img src={aboutGardenWall} alt="Jardim" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div className="aspect-[4/3] overflow-hidden flex items-center justify-center bg-background">
           </div>
         </div>
 
