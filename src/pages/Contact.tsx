@@ -2,7 +2,7 @@ import { MapPin, Phone, Clock } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import Footer from "@/components/Footer";
 import InstagramSection from "@/components/InstagramSection";
-import galleryGarden from "@/assets/gallery-garden.webp";
+import contactHero from "@/assets/contact-hero.jpg";
 import contactGarden from "@/assets/contact-garden.jpg";
 
 const Contact = () => {
