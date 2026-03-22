@@ -30,6 +30,16 @@ import menuSaladaPresunto from "@/assets/menu-salada-presunto.jpg";
 import menuSaladaMozzarella from "@/assets/menu-salada-mozzarella.jpg";
 import menuBowls from "@/assets/menu-bowls.jpg";
 import menuSaladaTop from "@/assets/menu-salada-top.jpg";
+import menuCroissant from "@/assets/menu-croissant.jpg";
+import menuPastelNata from "@/assets/menu-pastel-nata.jpg";
+import menuVerrine from "@/assets/menu-verrine.jpg";
+import menuCookiesCups from "@/assets/menu-cookies-cups.jpg";
+import menuTacaBambini from "@/assets/menu-taca-bambini.jpg";
+import menuTacaTropical from "@/assets/menu-taca-tropical.jpg";
+import menuTacaMaiores from "@/assets/menu-taca-maiores.jpg";
+import menuGeladosSampler from "@/assets/menu-gelados-sampler.jpg";
+import menuGelatoPistacio from "@/assets/menu-gelato-pistacio.jpg";
+import menuPastelNataCanela from "@/assets/menu-pastel-nata-canela.jpg";
 
 type MenuItem = { name: string; desc: string; price: string; img: string };
 
