@@ -80,7 +80,7 @@ const About = () => {
             <img src={galleryGarden} alt="Jardim" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="aspect-square overflow-hidden flex items-center justify-center" style={{ backgroundColor: '#822635' }}>
-            <img src={logoFooter} alt="Lavoratta" className="w-3/4 object-contain" />
+            <img src={logoGallery} alt="Lavoratta" className="w-3/4 object-contain" />
           </div>
         </div>
 
