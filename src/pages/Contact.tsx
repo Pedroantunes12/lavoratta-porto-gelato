@@ -8,7 +8,7 @@ import garden from "@/assets/garden.jpg";
 const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
-      <PageHero image={contactHero} title="Contacto" />
+      <PageHero image={galleryGarden} title="Contacto" />
 
       {/* Info Cards */}
       <section className="py-20">
