@@ -30,6 +30,16 @@ import menuSaladaPresunto from "@/assets/menu-salada-presunto.jpg";
 import menuSaladaMozzarella from "@/assets/menu-salada-mozzarella.jpg";
 import menuBowls from "@/assets/menu-bowls.jpg";
 import menuSaladaTop from "@/assets/menu-salada-top.jpg";
+import menuCroissant from "@/assets/menu-croissant.jpg";
+import menuPastelNata from "@/assets/menu-pastel-nata.jpg";
+import menuVerrine from "@/assets/menu-verrine.jpg";
+import menuCookiesCups from "@/assets/menu-cookies-cups.jpg";
+import menuTacaBambini from "@/assets/menu-taca-bambini.jpg";
+import menuTacaTropical from "@/assets/menu-taca-tropical.jpg";
+import menuTacaMaiores from "@/assets/menu-taca-maiores.jpg";
+import menuGeladosSampler from "@/assets/menu-gelados-sampler.jpg";
+import menuGelatoPistacio from "@/assets/menu-gelato-pistacio.jpg";
+import menuPastelNataCanela from "@/assets/menu-pastel-nata-canela.jpg";
 
 type MenuItem = { name: string; desc: string; price: string; img: string };
 
@@ -45,12 +55,12 @@ const menuData: Record<string, MenuItem[]> = {
     { name: "Gelados", desc: "Sabores artesanais.", price: "5.0€", img: gelados },
   ],
   "Taças de Gelado": [
-    { name: "Bambini", desc: "Gelado, Morango, maracujá, Manga, Nata, Topping de caramelo.", price: "7.90€", img: saboresHero },
-    { name: "Lavoratta", desc: "Gelado de Crossants, waffles, Choc dourado, Lavoratta.", price: "8.90€", img: gelados },
-    { name: "Marshlovers", desc: "Gelado, Avelã, gelado de Baunilha e Calda de Chocolate de leite, pistáchio e MarshmAllows.", price: "6.50€", img: saboresHero },
-    { name: "Tropical", desc: "Gelado, Manga, Morango e Sumo, Frutas, Waffle ou Manga.", price: "8.40€", img: gelados },
-    { name: "Maiores de 18", desc: "Gelado de Licores, Vodka, Shots de Licores, Lemon Pie, Caramelo.", price: "7.90€", img: boloLava },
-    { name: "Happy Lavoratta", desc: "Bolo de Morango, bola de Baunilha e Nata Chocolate, Pistáchio, Carapica, Chocolate.", price: "7.20€", img: saboresHero },
+    { name: "Bambini", desc: "Gelado, Morango, maracujá, Manga, Nata, Topping de caramelo.", price: "7.90€", img: menuTacaBambini },
+    { name: "Lavoratta", desc: "Gelado de Crossants, waffles, Choc dourado, Lavoratta.", price: "8.90€", img: menuGeladosSampler },
+    { name: "Marshlovers", desc: "Gelado, Avelã, gelado de Baunilha e Calda de Chocolate de leite, pistáchio e MarshmAllows.", price: "6.50€", img: menuGelatoPistacio },
+    { name: "Tropical", desc: "Gelado, Manga, Morango e Sumo, Frutas, Waffle ou Manga.", price: "8.40€", img: menuTacaTropical },
+    { name: "Maiores de 18", desc: "Gelado de Licores, Vodka, Shots de Licores, Lemon Pie, Caramelo.", price: "7.90€", img: menuTacaMaiores },
+    { name: "Happy Lavoratta", desc: "Bolo de Morango, bola de Baunilha e Nata Chocolate, Pistáchio, Carapica, Chocolate.", price: "7.20€", img: menuCookiesCups },
   ],
   "Crepes | Waffle | Panquecas": [
     { name: "Crepe FroYo & Berries", desc: "Crepe gelato, iogurte, frutos Vermelhos.", price: "7.90€", img: menuCrepeFroyo },
@@ -78,11 +88,11 @@ const menuData: Record<string, MenuItem[]> = {
   ],
   "Pastelaria e Sobremesas": [
     { name: "Brigadeiros", desc: "Vários sabores e combinações.", price: "1.30€", img: menuBrigadeiros },
-    { name: "Cookies Caseiras", desc: "Cookies, para quem ama cookies com mega sabores.", price: "1.60€", img: menuBrownie },
-    { name: "Croissants", desc: "Recheios de queijo, fiambre, compota, geleia e morangos.", price: "2.00€", img: pastelNata },
+    { name: "Cookies Caseiras", desc: "Cookies, para quem ama cookies com mega sabores.", price: "1.60€", img: menuCookiesCups },
+    { name: "Croissants", desc: "Recheios de queijo, fiambre, compota, geleia e morangos.", price: "2.00€", img: menuCroissant },
     { name: "Éclair", desc: "Vários sabores e recheios.", price: "1.80€", img: menuEclairs },
-    { name: "Pastel Nata", desc: "Para acompanhar o café delicioso.", price: "1.20€", img: pastelNata },
-    { name: "Verrines", desc: "Parfait de Iogurte grego, granola e frutos.", price: "3.90€", img: saboresHero },
+    { name: "Pastel Nata", desc: "Para acompanhar o café delicioso.", price: "1.20€", img: menuPastelNata },
+    { name: "Verrines", desc: "Parfait de Iogurte grego, granola e frutos.", price: "3.90€", img: menuVerrine },
   ],
 };
 
