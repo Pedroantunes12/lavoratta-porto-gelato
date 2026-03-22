@@ -49,7 +49,9 @@ const About = () => {
       </section>
 
       {/* Inspire-se */}
-      <section className="bg-primary py-20">
+      <section className="relative bg-primary py-20">
+        <div className="sphere-white w-10 h-10 top-10 right-[15%]" />
+        <div className="sphere-yellow w-8 h-8 bottom-12 left-[5%]" />
         <div className="container mx-auto px-4">
           <h2 className="font-display text-5xl md:text-6xl italic font-bold text-primary-foreground mb-12">Inspire-se</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

@@ -98,7 +98,10 @@ const Reservas = () => {
       </div>
 
       {/* Reservation Form */}
-      <section className="py-20">
+      <section className="relative py-20">
+        <div className="sphere-yellow w-8 h-8 top-10 right-[10%]" />
+        <div className="sphere-burgundy w-6 h-6 bottom-20 left-[12%]" />
+        <div className="sphere-white w-10 h-10 top-[50%] left-[5%]" />
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="max-w-2xl mx-auto">

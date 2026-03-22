@@ -113,7 +113,13 @@ const MenuPage = () => {
     <div className="min-h-screen bg-background">
       <PageHero image={menuHero} title="Menu" />
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="relative container mx-auto px-4 py-16">
+        <div className="sphere-yellow w-14 h-14 top-8 left-4" />
+        <div className="sphere-white w-8 h-8 top-[30%] right-8" />
+        <div className="sphere-burgundy w-10 h-10 top-[55%] left-8" />
+        <div className="sphere-yellow w-6 h-6 top-[75%] right-16" />
+        <div className="sphere-white w-8 h-8 bottom-32 left-[15%]" />
+        <div className="sphere-burgundy w-5 h-5 bottom-16 right-[10%]" />
         {Object.entries(menuData).map(([category, items], catIndex) => (
           <AnimatedSection key={category} className="mb-16" delay={catIndex * 100}>
             <div className="flex justify-center mb-10">
