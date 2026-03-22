@@ -58,7 +58,7 @@ const Index = () => {
 
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
-            <div className="bg-secondary p-12 md:p-16 flex flex-col justify-center">
+            <AnimatedSection animation="fade-right" className="bg-secondary p-12 md:p-16 flex flex-col justify-center">
               <h2 className="section-heading mb-4">Sobre Nós</h2>
               <p className="text-primary font-display italic text-lg font-semibold mb-6">
                 Localizado no coração do Porto.
@@ -72,10 +72,10 @@ const Index = () => {
               <Link to="/sobre" className="text-primary font-body text-sm tracking-wider hover:underline inline-block">
                 Leia Mais
               </Link>
-            </div>
-            <div className="relative overflow-hidden min-h-[400px]">
+            </AnimatedSection>
+            <AnimatedSection animation="fade-left" delay={200} className="relative overflow-hidden min-h-[400px]">
               <img src={gelatoCupFire} alt="Gelato Lavoratta" className="w-full h-full object-cover" />
-            </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
