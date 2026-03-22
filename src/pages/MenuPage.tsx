@@ -3,6 +3,8 @@ import { ArrowRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import Footer from "@/components/Footer";
 import InstagramSection from "@/components/InstagramSection";
+import AnimatedSection from "@/components/AnimatedSection";
+import { useParallax } from "@/hooks/useScrollAnimation";
 import menuHero from "@/assets/menu-hero.jpg";
 import redVelvet from "@/assets/red-velvet.jpg";
 import boloLava from "@/assets/bolo-lava.jpg";
@@ -105,57 +107,63 @@ const menuData: Record<string, MenuItem[]> = {
 };
 
 const MenuPage = () => {
+  const parallaxRef = useParallax();
+
   return (
     <div className="min-h-screen bg-background">
       <PageHero image={menuHero} title="Menu" />
 
       <div className="container mx-auto px-4 py-16">
-        {Object.entries(menuData).map(([category, items]) => (
-          <div key={category} className="mb-16">
+        {Object.entries(menuData).map(([category, items], catIndex) => (
+          <AnimatedSection key={category} className="mb-16" delay={catIndex * 100}>
             <div className="flex justify-center mb-10">
               <span className="category-badge">{category}</span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 max-w-4xl mx-auto">
-              {items.map((item) => (
-                <div key={item.name} className="flex items-center gap-4 group">
-                  <img src={item.img} alt={item.name} className="menu-item-image flex-shrink-0" />
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-baseline justify-between gap-2">
-                      <h3 className="font-display text-base font-semibold italic truncate">{item.name}</h3>
-                      <span className="font-display text-primary font-bold text-sm flex-shrink-0">{item.price}</span>
+              {items.map((item, i) => (
+                <AnimatedSection key={item.name} animation="fade-up" delay={i * 60}>
+                  <div className="flex items-center gap-4 group hover:bg-secondary/50 rounded-xl p-2 transition-colors duration-300">
+                    <img src={item.img} alt={item.name} className="menu-item-image flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <h3 className="font-display text-base font-semibold italic truncate">{item.name}</h3>
+                        <span className="font-display text-primary font-bold text-sm flex-shrink-0">{item.price}</span>
+                      </div>
+                      <p className="text-muted-foreground text-xs mt-1 line-clamp-2">{item.desc}</p>
                     </div>
-                    <p className="text-muted-foreground text-xs mt-1 line-clamp-2">{item.desc}</p>
                   </div>
-                </div>
+                </AnimatedSection>
               ))}
             </div>
-          </div>
+          </AnimatedSection>
         ))}
       </div>
 
-      {/* Reserve já */}
-      <section className="relative py-20 overflow-hidden">
+      {/* Reserve já - parallax */}
+      <div ref={parallaxRef} className="relative py-20 overflow-hidden">
         <img src={garden} alt="Reserve" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-primary/85" />
         <div className="relative z-10 text-center">
-          <h2 className="font-display text-5xl md:text-6xl italic font-bold text-primary-foreground mb-4">
-            Reserve já!
-          </h2>
-          <p className="text-primary-foreground/70 text-sm max-w-md mx-auto mb-8">
-            Saboreie momentos únicos! Reserve já a sua mesa e desfrute de uma refeição deliciosa num ambiente acolhedor.
-          </p>
-          <a
-            href="tel:+351221176549"
-            className="inline-flex items-center gap-3 text-primary-foreground/80 text-sm italic hover:text-primary-foreground transition-colors"
-          >
-            Reservar
-            <span className="w-10 h-10 rounded-full border-2 border-primary-foreground flex items-center justify-center">
-              <ArrowRight size={18} />
-            </span>
-          </a>
+          <AnimatedSection animation="scale">
+            <h2 className="font-display text-5xl md:text-6xl italic font-bold text-primary-foreground mb-4">
+              Reserve já!
+            </h2>
+            <p className="text-primary-foreground/70 text-sm max-w-md mx-auto mb-8">
+              Saboreie momentos únicos! Reserve já a sua mesa e desfrute de uma refeição deliciosa num ambiente acolhedor.
+            </p>
+            <Link
+              to="/reservas"
+              className="inline-flex items-center gap-3 text-primary-foreground/80 text-sm italic hover:text-primary-foreground transition-colors"
+            >
+              Reservar
+              <span className="w-10 h-10 rounded-full border-2 border-primary-foreground flex items-center justify-center">
+                <ArrowRight size={18} />
+              </span>
+            </Link>
+          </AnimatedSection>
         </div>
-      </section>
+      </div>
 
       <InstagramSection />
       <Footer />

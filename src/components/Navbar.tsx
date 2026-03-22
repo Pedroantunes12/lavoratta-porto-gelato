@@ -8,13 +8,14 @@ const navItems = [
   { label: "Início", path: "/" },
   { label: "Sobre", path: "/sobre" },
   { label: "Menu", path: "/menu" },
+  { label: "Reservas", path: "/reservas" },
   { label: "Contacto", path: "/contacto" },
 ];
 
 const Navbar = () => {
   const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const showLogo = location.pathname === "/sobre" || location.pathname === "/contacto";
+  const showLogo = location.pathname !== "/";
 
   return (
     <nav className="absolute top-0 left-0 right-0 z-50">
