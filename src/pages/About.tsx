@@ -18,7 +18,10 @@ const About = () => {
       <PageHero image={aboutGardenWall} title="Sobre" />
 
       {/* O Nosso Local */}
-      <section className="py-20">
+      <section className="relative py-20">
+        <div className="sphere-yellow w-12 h-12 -top-2 left-[10%]" />
+        <div className="sphere-white w-8 h-8 top-16 right-[8%]" />
+        <div className="sphere-burgundy w-10 h-10 bottom-20 left-[20%]" />
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
