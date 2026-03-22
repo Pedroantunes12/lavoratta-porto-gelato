@@ -18,7 +18,7 @@ export function useScrollAnimation(threshold = 0.15) {
   return { ref, isVisible };
 }
 
-export function useParallax() {
+export function useParallax(speed = 0.4) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -31,18 +31,15 @@ export function useParallax() {
     img.style.transition = "none";
 
     const handleScroll = () => {
-      const rect = el.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      const scrollProgress = (windowHeight - rect.top) / (windowHeight + rect.height);
-      const clampedProgress = Math.max(0, Math.min(1, scrollProgress));
-      const translateY = (clampedProgress - 0.5) * 80;
-      img.style.transform = `translateY(${translateY}px) scale(1.15)`;
+      const scrollY = window.scrollY;
+      const translateY = scrollY * speed;
+      img.style.transform = `translateY(${translateY}px) scale(1.25)`;
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [speed]);
 
   return ref;
 }
