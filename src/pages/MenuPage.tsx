@@ -17,6 +17,15 @@ import menuWaffles from "@/assets/menu-waffles.jpg";
 import menuWaffleChoc from "@/assets/menu-waffle-choc.jpg";
 import menuPanquecaBambini from "@/assets/menu-panqueca-bambini.jpg";
 import menuPanquecaEgg from "@/assets/menu-panqueca-egg.jpg";
+import menuPistacio from "@/assets/menu-pistacio.jpg";
+import menuOreo from "@/assets/menu-oreo.jpg";
+import menuCheesecakeMaracuja from "@/assets/menu-cheesecake-maracuja.jpg";
+import menuRedVelvet from "@/assets/menu-red-velvet.jpg";
+import menuBrownie from "@/assets/menu-brownie.jpg";
+import menuChocCake from "@/assets/menu-choc-cake.jpg";
+import menuEclairs from "@/assets/menu-eclairs.jpg";
+import menuStrawberryPastry from "@/assets/menu-strawberry-pastry.jpg";
+import menuBrigadeiros from "@/assets/menu-brigadeiros.jpg";
 
 type MenuItem = { name: string; desc: string; price: string; img: string };
 
@@ -48,14 +57,14 @@ const menuData: Record<string, MenuItem[]> = {
     { name: "Panqueca Lavoratta", desc: "Panq com gelato premium com morango e chocolate e caramelo e leite.", price: "8.90€", img: menuPanquecaEgg },
   ],
   "Doces | Bolos": [
-    { name: "Bolo Pistácio", desc: "Com massa fina para os amantes de Pistácio.", price: "3.30€", img: redVelvet },
-    { name: "Bolo Oreo", desc: "Com cobertura à base de oramentos de Oreo.", price: "3.30€", img: boloLava },
-    { name: "Cheesecake de Maracujá", desc: "A versão da cheesecake com gelato e calda de Maracujá.", price: "3.30€", img: pastelNata },
-    { name: "Cheesecake de Frutos Vermelhos", desc: "Tradição e modernidade.", price: "3.30€", img: redVelvet },
-    { name: "Bolo Cookie", desc: "A nossa receita dos bolos. Tem o sabor daquilo que é caseiro e saudável.", price: "3.30€", img: boloLava },
-    { name: "Bolo Banoffee", desc: "Dois delíciosos sabores com banana e caramelo.", price: "3.30€", img: pastelNata },
-    { name: "Bolo Lava", desc: "Um delicado bolo com a cobertura de chocolate quente.", price: "3.30€", img: boloLava },
-    { name: "Cheesecake de Morango", desc: "A versão da cheesecake com morango.", price: "3.30€", img: redVelvet },
+    { name: "Bolo Pistácio", desc: "Com massa fina para os amantes de Pistácio.", price: "3.30€", img: menuPistacio },
+    { name: "Bolo Oreo", desc: "Com cobertura à base de oramentos de Oreo.", price: "3.30€", img: menuOreo },
+    { name: "Cheesecake de Maracujá", desc: "A versão da cheesecake com gelato e calda de Maracujá.", price: "3.30€", img: menuCheesecakeMaracuja },
+    { name: "Cheesecake de Frutos Vermelhos", desc: "Tradição e modernidade.", price: "3.30€", img: menuRedVelvet },
+    { name: "Bolo Cookie", desc: "A nossa receita dos bolos. Tem o sabor daquilo que é caseiro e saudável.", price: "3.30€", img: menuBrownie },
+    { name: "Bolo Banoffee", desc: "Dois delíciosos sabores com banana e caramelo.", price: "3.30€", img: menuChocCake },
+    { name: "Bolo Lava", desc: "Um delicado bolo com a cobertura de chocolate quente.", price: "3.30€", img: menuEclairs },
+    { name: "Cheesecake de Morango", desc: "A versão da cheesecake com morango.", price: "3.30€", img: menuStrawberryPastry },
   ],
   "Saladas e Bowls": [
     { name: "Presunto", desc: "Fresco, natural, com salsa e molho.", price: "8.25€", img: ribsBurger },
@@ -64,10 +73,10 @@ const menuData: Record<string, MenuItem[]> = {
     { name: "Bowl Pitaya", desc: "Bowl de Pitaya e fruta e granola.", price: "9.90€", img: saboresHero },
   ],
   "Pastelaria e Sobremesas": [
-    { name: "Brigadeiros", desc: "Vários sabores e combinações.", price: "1.30€", img: boloLava },
-    { name: "Cookies Caseiras", desc: "Cookies, para quem ama cookies com mega sabores.", price: "1.60€", img: redVelvet },
+    { name: "Brigadeiros", desc: "Vários sabores e combinações.", price: "1.30€", img: menuBrigadeiros },
+    { name: "Cookies Caseiras", desc: "Cookies, para quem ama cookies com mega sabores.", price: "1.60€", img: menuBrownie },
     { name: "Croissants", desc: "Recheios de queijo, fiambre, compota, geleia e morangos.", price: "2.00€", img: pastelNata },
-    { name: "Éclair", desc: "Vários sabores e recheios.", price: "1.80€", img: boloLava },
+    { name: "Éclair", desc: "Vários sabores e recheios.", price: "1.80€", img: menuEclairs },
     { name: "Pastel Nata", desc: "Para acompanhar o café delicioso.", price: "1.20€", img: pastelNata },
     { name: "Verrines", desc: "Parfait de Iogurte grego, granola e frutos.", price: "3.90€", img: saboresHero },
   ],
