@@ -3,6 +3,8 @@ import { ArrowRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import Footer from "@/components/Footer";
 import InstagramSection from "@/components/InstagramSection";
+import AnimatedSection from "@/components/AnimatedSection";
+import { useParallax } from "@/hooks/useScrollAnimation";
 import menuHero from "@/assets/menu-hero.jpg";
 import redVelvet from "@/assets/red-velvet.jpg";
 import boloLava from "@/assets/bolo-lava.jpg";
