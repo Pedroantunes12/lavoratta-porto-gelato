@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo.png";
+import logoWhite from "@/assets/logo-white.png";
 
 const navItems = [
   { label: "Início", path: "/" },
@@ -13,6 +14,7 @@ const navItems = [
 const Navbar = () => {
   const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const showLogo = location.pathname === "/sobre" || location.pathname === "/contacto";
 
   return (
     <nav className="absolute top-0 left-0 right-0 z-50">
@@ -33,13 +35,18 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-4 text-primary-foreground/80">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
-            <Facebook size={18} />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
-            <Instagram size={18} />
-          </a>
+        <div className="hidden md:flex items-center gap-4">
+          <div className="flex items-center gap-4 text-primary-foreground/80">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+              <Facebook size={18} />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+              <Instagram size={18} />
+            </a>
+          </div>
+          {showLogo && (
+            <img src={logoWhite} alt="Lavoratta" className="h-12 ml-4" />
+          )}
         </div>
 
         <button
