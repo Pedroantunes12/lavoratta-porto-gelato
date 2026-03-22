@@ -3,7 +3,7 @@ import PageHero from "@/components/PageHero";
 import Footer from "@/components/Footer";
 import InstagramSection from "@/components/InstagramSection";
 import galleryGarden from "@/assets/gallery-garden.webp";
-import garden from "@/assets/garden.jpg";
+import contactGarden from "@/assets/contact-garden.jpg";
 
 const Contact = () => {
   return (
