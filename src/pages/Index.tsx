@@ -88,7 +88,9 @@ const Index = () => {
         <div className="sphere-burgundy w-6 h-6 bottom-16 left-32" />
 
         <div className="container mx-auto px-4">
-          <h2 className="section-heading mb-16">Criações</h2>
+          <AnimatedSection>
+            <h2 className="section-heading mb-16">Criações</h2>
+          </AnimatedSection>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-1 mb-6">
             {creations.map((item) => (
               <div key={item.name} className="group">
