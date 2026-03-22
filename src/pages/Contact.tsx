@@ -11,7 +11,11 @@ const Contact = () => {
       <PageHero image={contactHero} title="Contacto" />
 
       {/* Info Cards */}
-      <section className="py-20">
+      <section className="relative py-20">
+        <div className="sphere-yellow w-12 h-12 top-4 right-[15%]" />
+        <div className="sphere-white w-8 h-8 top-24 left-[8%]" />
+        <div className="sphere-burgundy w-10 h-10 bottom-12 right-[20%]" />
+        <div className="sphere-yellow w-6 h-6 bottom-8 left-[30%]" />
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {/* Location */}
