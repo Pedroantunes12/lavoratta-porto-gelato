@@ -17,6 +17,15 @@ import menuWaffles from "@/assets/menu-waffles.jpg";
 import menuWaffleChoc from "@/assets/menu-waffle-choc.jpg";
 import menuPanquecaBambini from "@/assets/menu-panqueca-bambini.jpg";
 import menuPanquecaEgg from "@/assets/menu-panqueca-egg.jpg";
+import menuPistacio from "@/assets/menu-pistacio.jpg";
+import menuOreo from "@/assets/menu-oreo.jpg";
+import menuCheesecakeMaracuja from "@/assets/menu-cheesecake-maracuja.jpg";
+import menuRedVelvet from "@/assets/menu-red-velvet.jpg";
+import menuBrownie from "@/assets/menu-brownie.jpg";
+import menuChocCake from "@/assets/menu-choc-cake.jpg";
+import menuEclairs from "@/assets/menu-eclairs.jpg";
+import menuStrawberryPastry from "@/assets/menu-strawberry-pastry.jpg";
+import menuBrigadeiros from "@/assets/menu-brigadeiros.jpg";
 
 type MenuItem = { name: string; desc: string; price: string; img: string };
 
