@@ -26,6 +26,10 @@ import menuChocCake from "@/assets/menu-choc-cake.jpg";
 import menuEclairs from "@/assets/menu-eclairs.jpg";
 import menuStrawberryPastry from "@/assets/menu-strawberry-pastry.jpg";
 import menuBrigadeiros from "@/assets/menu-brigadeiros.jpg";
+import menuSaladaPresunto from "@/assets/menu-salada-presunto.jpg";
+import menuSaladaMozzarella from "@/assets/menu-salada-mozzarella.jpg";
+import menuBowls from "@/assets/menu-bowls.jpg";
+import menuSaladaTop from "@/assets/menu-salada-top.jpg";
 
 type MenuItem = { name: string; desc: string; price: string; img: string };
 
