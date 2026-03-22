@@ -11,7 +11,7 @@ import boloLavaReal from "@/assets/bolo-lava-real.png";
 import ribsBurgerReal from "@/assets/ribs-burger-real.png";
 import geladosReal from "@/assets/gelados-real.png";
 import handConePink from "@/assets/hand-cone-pink.png";
-import cakeTopView from "@/assets/cake-top-view.jpg";
+import redvelvetCake from "@/assets/redvelvet-cake.jpg";
 
 const creations = [
   { name: "Pastel Nata Lavoratta", desc: "A nossa criação, a base do pastel nata e o gelado pastel nata.", img: pastelNataReal },
