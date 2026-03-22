@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-footer.jpg";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 items-start">
           <div className="flex justify-center md:justify-start">
-            <img src={logo} alt="Lavoratta" className="w-28 h-28 rounded-full bg-primary p-3 object-contain" />
+            <img src={logo} alt="Lavoratta" className="w-32 h-32 rounded-lg object-cover" />
           </div>
 
           <div>
