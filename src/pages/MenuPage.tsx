@@ -40,19 +40,27 @@ import menuTacaMaiores from "@/assets/menu-taca-maiores.jpg";
 import menuGeladosSampler from "@/assets/menu-gelados-sampler.jpg";
 import menuGelatoPistacio from "@/assets/menu-gelato-pistacio.jpg";
 import menuPastelNataCanela from "@/assets/menu-pastel-nata-canela.jpg";
+import menuDestRedvelvet from "@/assets/menu-dest-redvelvet.jpg";
+import menuDestTosta from "@/assets/menu-dest-tosta.jpg";
+import menuDestSalada from "@/assets/menu-dest-salada.jpg";
+import menuDestCrepeRibs from "@/assets/menu-dest-crepe-ribs.jpg";
+import menuDestBurger from "@/assets/menu-dest-burger.jpg";
+import menuDestCrepeBanoffe from "@/assets/menu-dest-crepe-banoffe.jpg";
+import menuDestPastelNata from "@/assets/menu-dest-pastel-nata.jpg";
+import menuDestGelados from "@/assets/menu-dest-gelados.jpg";
 
 type MenuItem = { name: string; desc: string; price: string; img: string };
 
 const menuData: Record<string, MenuItem[]> = {
   "Destaques": [
-    { name: "Red Velvet", desc: "Bolo veludo vermelho com frutos.", price: "3.30€", img: redVelvet },
-    { name: "Tosta", desc: "Duas fatias e Coca-Cola.", price: "8.5€", img: ribsBurger },
-    { name: "Salada Mozzarella", desc: "Entrada Caprese, presunto e muito queijo.", price: "8.25€", img: gelados },
-    { name: "Crepe Ribs", desc: "Crepe com carne desfiada num molho especial.", price: "10€", img: ribsBurger },
-    { name: "Waffle Queijo", desc: "Gelato, Morango e massa.", price: "8.20€", img: pastelNata },
-    { name: "Crepe Banoffe", desc: "Caramelo, banana e gelato.", price: "7.60€", img: boloLava },
-    { name: "Pastel Nata Gelado", desc: "Pastel nata com Lavoratta.", price: "2.20€", img: pastelNata },
-    { name: "Gelados", desc: "Sabores artesanais.", price: "5.0€", img: gelados },
+    { name: "Red Velvet", desc: "Bolo veludo vermelho com frutos.", price: "3.30€", img: menuDestRedvelvet },
+    { name: "Tosta", desc: "Duas fatias e Coca-Cola.", price: "8.5€", img: menuDestTosta },
+    { name: "Salada Mozzarella", desc: "Entrada Caprese, presunto e muito queijo.", price: "8.25€", img: menuDestSalada },
+    { name: "Crepe Ribs", desc: "Crepe com carne desfiada num molho especial.", price: "10€", img: menuDestCrepeRibs },
+    { name: "Waffle Queijo", desc: "Gelato, Morango e massa.", price: "8.20€", img: menuDestBurger },
+    { name: "Crepe Banoffe", desc: "Caramelo, banana e gelato.", price: "7.60€", img: menuDestCrepeBanoffe },
+    { name: "Pastel Nata Gelado", desc: "Pastel nata com Lavoratta.", price: "2.20€", img: menuDestPastelNata },
+    { name: "Gelados", desc: "Sabores artesanais.", price: "5.0€", img: menuDestGelados },
   ],
   "Taças de Gelado": [
     { name: "Bambini", desc: "Gelado, Morango, maracujá, Manga, Nata, Topping de caramelo.", price: "7.90€", img: menuTacaBambini },
