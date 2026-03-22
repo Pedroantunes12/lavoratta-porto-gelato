@@ -117,6 +117,7 @@ const Index = () => {
             </Link>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Comentários */}
