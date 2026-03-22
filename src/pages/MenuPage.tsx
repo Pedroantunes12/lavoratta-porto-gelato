@@ -55,12 +55,12 @@ const menuData: Record<string, MenuItem[]> = {
     { name: "Gelados", desc: "Sabores artesanais.", price: "5.0€", img: gelados },
   ],
   "Taças de Gelado": [
-    { name: "Bambini", desc: "Gelado, Morango, maracujá, Manga, Nata, Topping de caramelo.", price: "7.90€", img: saboresHero },
-    { name: "Lavoratta", desc: "Gelado de Crossants, waffles, Choc dourado, Lavoratta.", price: "8.90€", img: gelados },
-    { name: "Marshlovers", desc: "Gelado, Avelã, gelado de Baunilha e Calda de Chocolate de leite, pistáchio e MarshmAllows.", price: "6.50€", img: saboresHero },
-    { name: "Tropical", desc: "Gelado, Manga, Morango e Sumo, Frutas, Waffle ou Manga.", price: "8.40€", img: gelados },
-    { name: "Maiores de 18", desc: "Gelado de Licores, Vodka, Shots de Licores, Lemon Pie, Caramelo.", price: "7.90€", img: boloLava },
-    { name: "Happy Lavoratta", desc: "Bolo de Morango, bola de Baunilha e Nata Chocolate, Pistáchio, Carapica, Chocolate.", price: "7.20€", img: saboresHero },
+    { name: "Bambini", desc: "Gelado, Morango, maracujá, Manga, Nata, Topping de caramelo.", price: "7.90€", img: menuTacaBambini },
+    { name: "Lavoratta", desc: "Gelado de Crossants, waffles, Choc dourado, Lavoratta.", price: "8.90€", img: menuGeladosSampler },
+    { name: "Marshlovers", desc: "Gelado, Avelã, gelado de Baunilha e Calda de Chocolate de leite, pistáchio e MarshmAllows.", price: "6.50€", img: menuGelatoPistacio },
+    { name: "Tropical", desc: "Gelado, Manga, Morango e Sumo, Frutas, Waffle ou Manga.", price: "8.40€", img: menuTacaTropical },
+    { name: "Maiores de 18", desc: "Gelado de Licores, Vodka, Shots de Licores, Lemon Pie, Caramelo.", price: "7.90€", img: menuTacaMaiores },
+    { name: "Happy Lavoratta", desc: "Bolo de Morango, bola de Baunilha e Nata Chocolate, Pistáchio, Carapica, Chocolate.", price: "7.20€", img: menuCookiesCups },
   ],
   "Crepes | Waffle | Panquecas": [
     { name: "Crepe FroYo & Berries", desc: "Crepe gelato, iogurte, frutos Vermelhos.", price: "7.90€", img: menuCrepeFroyo },
