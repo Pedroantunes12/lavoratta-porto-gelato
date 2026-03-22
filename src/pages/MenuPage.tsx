@@ -26,6 +26,10 @@ import menuChocCake from "@/assets/menu-choc-cake.jpg";
 import menuEclairs from "@/assets/menu-eclairs.jpg";
 import menuStrawberryPastry from "@/assets/menu-strawberry-pastry.jpg";
 import menuBrigadeiros from "@/assets/menu-brigadeiros.jpg";
+import menuSaladaPresunto from "@/assets/menu-salada-presunto.jpg";
+import menuSaladaMozzarella from "@/assets/menu-salada-mozzarella.jpg";
+import menuBowls from "@/assets/menu-bowls.jpg";
+import menuSaladaTop from "@/assets/menu-salada-top.jpg";
 
 type MenuItem = { name: string; desc: string; price: string; img: string };
 
@@ -67,10 +71,10 @@ const menuData: Record<string, MenuItem[]> = {
     { name: "Cheesecake de Morango", desc: "A versão da cheesecake com morango.", price: "3.30€", img: menuStrawberryPastry },
   ],
   "Saladas e Bowls": [
-    { name: "Presunto", desc: "Fresco, natural, com salsa e molho.", price: "8.25€", img: ribsBurger },
-    { name: "Mozzarella Fresca", desc: "Mozzarella, tomate, abóbora, tomate seco.", price: "7.90€", img: gelados },
-    { name: "Bowl Açaí", desc: "Bowl com açaí e fruta.", price: "9.90€", img: saboresHero },
-    { name: "Bowl Pitaya", desc: "Bowl de Pitaya e fruta e granola.", price: "9.90€", img: saboresHero },
+    { name: "Presunto", desc: "Fresco, natural, com salsa e molho.", price: "8.25€", img: menuSaladaPresunto },
+    { name: "Mozzarella Fresca", desc: "Mozzarella, tomate, abóbora, tomate seco.", price: "7.90€", img: menuSaladaMozzarella },
+    { name: "Bowl Açaí", desc: "Bowl com açaí e fruta.", price: "9.90€", img: menuBowls },
+    { name: "Bowl Pitaya", desc: "Bowl de Pitaya e fruta e granola.", price: "9.90€", img: menuSaladaTop },
   ],
   "Pastelaria e Sobremesas": [
     { name: "Brigadeiros", desc: "Vários sabores e combinações.", price: "1.30€", img: menuBrigadeiros },
