@@ -11,6 +11,12 @@ import gelados from "@/assets/gelados.jpg";
 import pastelNata from "@/assets/pastel-nata.jpg";
 import saboresHero from "@/assets/sabores-hero.jpg";
 import garden from "@/assets/garden.jpg";
+import menuCrepeFroyo from "@/assets/menu-crepe-froyo.jpg";
+import menuCrepePresunto from "@/assets/menu-crepe-presunto.jpg";
+import menuWaffles from "@/assets/menu-waffles.jpg";
+import menuWaffleChoc from "@/assets/menu-waffle-choc.jpg";
+import menuPanquecaBambini from "@/assets/menu-panqueca-bambini.jpg";
+import menuPanquecaEgg from "@/assets/menu-panqueca-egg.jpg";
 
 type MenuItem = { name: string; desc: string; price: string; img: string };
 
@@ -34,12 +40,12 @@ const menuData: Record<string, MenuItem[]> = {
     { name: "Happy Lavoratta", desc: "Bolo de Morango, bola de Baunilha e Nata Chocolate, Pistáchio, Carapica, Chocolate.", price: "7.20€", img: saboresHero },
   ],
   "Crepes | Waffle | Panquecas": [
-    { name: "Crepe FroYo & Berries", desc: "Crepe gelato, iogurte, frutos Vermelhos.", price: "7.90€", img: pastelNata },
-    { name: "Crepe Lavoratta", desc: "Crepe com gelato contendo waffles e toppings.", price: "8.90€", img: boloLava },
-    { name: "Waffle Gelado e Topping", desc: "Waffle com gelado e toppings variados.", price: "5.40€", img: pastelNata },
-    { name: "Waffle Topping Banoffee", desc: "Waffle, gelato e caramelo de banana e Nata.", price: "7.60€", img: boloLava },
-    { name: "Panqueca Bambini", desc: "Gelato, banana e choc e morango e caramelo e marmelada.", price: "7.90€", img: pastelNata },
-    { name: "Panqueca Lavoratta", desc: "Panq com gelato premium com morango e chocolate e caramelo e leite.", price: "8.90€", img: boloLava },
+    { name: "Crepe FroYo & Berries", desc: "Crepe gelato, iogurte, frutos Vermelhos.", price: "7.90€", img: menuCrepeFroyo },
+    { name: "Crepe Lavoratta", desc: "Crepe com gelato contendo waffles e toppings.", price: "8.90€", img: menuCrepePresunto },
+    { name: "Waffle Gelado e Topping", desc: "Waffle com gelado e toppings variados.", price: "5.40€", img: menuWaffles },
+    { name: "Waffle Topping Banoffee", desc: "Waffle, gelato e caramelo de banana e Nata.", price: "7.60€", img: menuWaffleChoc },
+    { name: "Panqueca Bambini", desc: "Gelato, banana e choc e morango e caramelo e marmelada.", price: "7.90€", img: menuPanquecaBambini },
+    { name: "Panqueca Lavoratta", desc: "Panq com gelato premium com morango e chocolate e caramelo e leite.", price: "8.90€", img: menuPanquecaEgg },
   ],
   "Doces | Bolos": [
     { name: "Bolo Pistácio", desc: "Com massa fina para os amantes de Pistácio.", price: "3.30€", img: redVelvet },
