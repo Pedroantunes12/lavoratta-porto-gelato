@@ -71,7 +71,7 @@ const Contact = () => {
 
       {/* Garden Image */}
       <section className="relative h-[50vh] min-h-[300px]">
-        <img src={garden} alt="Jardim Lavoratta" className="w-full h-full object-cover" />
+        <img src={contactGarden} alt="Jardim Lavoratta" className="w-full h-full object-cover" />
       </section>
 
       <InstagramSection />
