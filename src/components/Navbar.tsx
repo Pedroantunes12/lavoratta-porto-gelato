@@ -178,7 +178,7 @@ const Navbar = () => {
 
                     <div className="text-right font-body text-xs tracking-widest uppercase leading-relaxed">
                       <p>Gelataria & Creparia</p>
-                      <p className="mt-1">Espinho, Portugal</p>
+                      <p className="mt-1">Porto, Portugal</p>
                     </div>
 
                     <div className="flex items-center gap-4">
