@@ -48,8 +48,32 @@ const Index = () => {
         </div>
         <div className="hero-overlay" />
         <Navbar />
-        <div className="relative z-10 flex items-center justify-center">
-          <img src={logoWhite} alt="Lavoratta" className="w-96 md:w-[500px] lg:w-[600px]" />
+        <div className="relative z-10 flex items-center justify-center overflow-hidden">
+          {/* Left curtain */}
+          <motion.div
+            className="absolute inset-0 bg-foreground z-20"
+            initial={{ x: 0 }}
+            animate={{ x: "-100%" }}
+            transition={{ duration: 1.2, delay: 0.3, ease: [0.76, 0, 0.24, 1] }}
+            style={{ originX: 0 }}
+          />
+          {/* Right curtain */}
+          <motion.div
+            className="absolute inset-0 bg-foreground z-20"
+            initial={{ x: 0 }}
+            animate={{ x: "100%" }}
+            transition={{ duration: 1.2, delay: 0.3, ease: [0.76, 0, 0.24, 1] }}
+            style={{ originX: 1 }}
+          />
+          {/* Logo fades in after curtains open */}
+          <motion.img
+            src={logoWhite}
+            alt="Lavoratta"
+            className="w-96 md:w-[500px] lg:w-[600px]"
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.8, ease: "easeOut" }}
+          />
         </div>
       </section>
 
